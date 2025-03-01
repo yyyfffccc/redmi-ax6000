@@ -79,8 +79,8 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P2_SH
 
 
-    - name: SSH connection to Actions
-      uses: P3TERX/debugger-action@master
+    - name: Start SSH via tmate
+      uses: P3TERX/ssh2actions@main
 
     
 
