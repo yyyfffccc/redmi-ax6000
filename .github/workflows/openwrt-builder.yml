@@ -68,9 +68,7 @@ jobs:
       run: cd openwrt && ./scripts/feeds update -a
 
     - name: Update Golang
-      run: chmod +x update.sh
-           cd openwrt
-           $GITHUB_WORKSPACE/update.sh
+      run: chmod +x update.sh && ./update.sh
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
