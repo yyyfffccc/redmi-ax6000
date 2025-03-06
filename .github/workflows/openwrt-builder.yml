@@ -86,7 +86,7 @@ jobs:
         rm -rf feeds/packages/net/sing-box/
         rm -rf feeds/packages/net/hysteria/
         rm -rf feeds/packages/net/shadowsocksr-libev/
-        git clone https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
+        git clone https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
         git clone https://github.com/xiaorouji/openwrt-passwall-packages package/luci-app-passwall-packages
 
     - name: Load custom configuration
