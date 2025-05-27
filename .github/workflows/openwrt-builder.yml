@@ -85,10 +85,8 @@ jobs:
     - name: Update Golang
       run: |
           cd openwrt
-          git clone https://github.com/openwrt/packages packages_temp
-          cp -r packages_temp/libs/libpam feeds/packages/libs/
-          cp -r packages_temp/net/wsdd2 feeds/packages/net/
-          rm -rf packages_temp
+          rm -rf feeds/packages/lang/golang
+          git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
 
 
 
