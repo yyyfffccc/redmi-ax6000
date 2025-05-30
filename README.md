@@ -6,6 +6,7 @@ run workflow
 等待出现SSH链接，并点击打开新页面
 进入ssh连接页面后
 ctrl+c
-输入 cd openwrt && make menuconfig 进入图形选择界面，选择好所需插件后保存退出。
+输入 cd openwrt && make menuconfig 进入图形选择界面，选择好所需插件后保存退出。LuCI ---> Applications 选择所需的插件
+
 退出后输入ctrl+D
 ACTION会自动开始后面的操作
