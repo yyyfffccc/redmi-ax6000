@@ -28,9 +28,11 @@
 # Add uugamebooster
 rm -rf feeds/luci/applications/luci-app-uugamebooster
 rm -rf feeds/packages/net/uugamebooster
+rm -rf feeds/packages/lang/rust
 git clone https://github.com/datouha/uugamebooster.git feeds/1
 mv ./feeds/1/uugamebooster ./feeds/packages/net
 mv ./feeds/1/luci-app-uugamebooster ./feeds/luci/applications
+mv ./feeds/1/rust ./feeds/packages/lang
 rm -rf feeds/1
 
 echo '
