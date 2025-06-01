@@ -28,12 +28,14 @@
 # Add uugamebooster
 rm -rf feeds/luci/applications/luci-app-uugamebooster
 rm -rf feeds/packages/net/uugamebooster
-rm -rf feeds/packages/lang/rust
 git clone https://github.com/datouha/uugamebooster.git feeds/1
 mv ./feeds/1/uugamebooster ./feeds/packages/net
 mv ./feeds/1/luci-app-uugamebooster ./feeds/luci/applications
-mv ./feeds/1/rust ./feeds/packages/lang
 rm -rf feeds/1
+git clone https://github.com/xiaorouji/openwrt-passwall-packages feeds/2
+rm -rf feeds/packages/net/{shadowsocks-rust，shadowsocksr-libev，shadowsocks-libev}   
+mv ./feeds/2/{shadowsocks-rust，shadowsocksr-libev，shadowsocks-libev} ./feeds/packages/net
+rm -rf feeds/2
 
 echo '
 
